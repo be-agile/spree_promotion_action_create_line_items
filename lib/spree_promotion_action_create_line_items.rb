@@ -1,0 +1,6 @@
+require 'spree_core'
+require 'spree_storefront'
+require 'spree_extension'
+require 'deface'
+require 'spree_promotion_action_create_line_items/engine'
+require 'spree_promotion_action_create_line_items/version'

@@ -1,0 +1,4 @@
+<!-- surround "div[class~='inline-block']" -->
+<% unless is_campaign %>
+  <%= render_original %>
+<% end %>

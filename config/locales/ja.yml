@@ -1,0 +1,4 @@
+ja:
+  spree:
+    campaign_line_item:
+      cannot_modify: "キャンペーンで追加される商品は、カートへの追加・変更・削除ができません。"

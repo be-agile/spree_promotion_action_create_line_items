@@ -1,0 +1,5 @@
+<!-- surround "div[class*='fixed-pdp-button']" -->
+<% if is_campaign %>
+<% else %>
+  <%= render_original %>
+<% end %>

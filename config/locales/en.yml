@@ -1,0 +1,4 @@
+en:
+  spree:
+    campaign_line_item:
+      cannot_modify: "Items added by a campaign cannot be added to, changed in or removed from the cart."

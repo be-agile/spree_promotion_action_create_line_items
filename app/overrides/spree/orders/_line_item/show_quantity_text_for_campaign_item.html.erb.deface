@@ -1,0 +1,7 @@
+<!-- replace "erb:contains('spree/orders/line_item_quantity')" -->
+<%# @see https://github.com/be-agile/giga-repeat/issues/1160 %>
+<% if campaign_line_item?(line_item) %>
+  <span class="text-sm"><%= Spree.t(:quantity) %>: <%= line_item.quantity %></span>
+<% else %>
+  <%= render 'spree/orders/line_item_quantity', line_item: line_item %>
+<% end %>

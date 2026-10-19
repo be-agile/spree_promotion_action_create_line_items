@@ -1,0 +1,3 @@
+<!-- replace "erb[silent]:contains('line_item.variant.backorderable?')" -->
+<%# @see https://github.com/be-agile/giga-repeat/issues/1160 %>
+<% if !campaign_line_item?(line_item) && !line_item.variant.backorderable? && line_item.variant.total_on_hand < 5 %>

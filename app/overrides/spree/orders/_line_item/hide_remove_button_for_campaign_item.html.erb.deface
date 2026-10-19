@@ -1,0 +1,9 @@
+<!-- surround "div.justify-between" -->
+<%# @see https://github.com/be-agile/giga-repeat/issues/1160 %>
+<% if campaign_line_item?(line_item) %>
+  <div class="flex justify-between">
+    <%= link_to line_item.name, spree_storefront_resource_url(line_item.product), class: 'font-semibold text-text', data: { 'turbo-frame': '_top' } %>
+  </div>
+<% else %>
+  <%= render_original %>
+<% end %>

@@ -1,0 +1,6 @@
+<!-- surround "p[class~='quantity-selector-label']" -->
+<% target_variant = selected_variant || product&.first_or_default_variant(current_currency) %>
+<% is_campaign = target_variant&.campaign_variant? %>
+<% unless is_campaign %>
+  <%= render_original %>
+<% end %>

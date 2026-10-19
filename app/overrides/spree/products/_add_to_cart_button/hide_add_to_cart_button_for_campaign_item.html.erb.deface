@@ -1,0 +1,10 @@
+<!-- surround "div[data-sticky-button-target='stickyButton']" -->
+<% target_variant = selected_variant || product.first_or_default_variant(current_currency) %>
+<% is_campaign = target_variant&.campaign_variant? %>
+<% if is_campaign %>
+  <div class='<%= sticky_button_classes %> bottom-0 flex flex-col gap-4 z-10' data-sticky-button-target='stickyButton'>
+    <button type='button' class='hidden' data-product-form-target='submit' disabled></button>
+  </div>
+<% else %>
+  <%= render_original %>
+<% end %>
